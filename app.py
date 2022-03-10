@@ -12,7 +12,7 @@ def hello_world():
     #return render_template("index.html")
     return "hello world"
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['POST','GET'])
 def predict():
     
     
