@@ -42,7 +42,7 @@ def predict():
     #prediction=model.predict(input_query)[0]
     prediction=model.predict_proba(input_query)
     output='{0:.{1}f}'.format(prediction[0][1], 2)
-    output = str(float(output)*100)+'%'
+    output = str(float(output)*100)
 
     '''if output>str(0.5):
         return render_template('result.html',pred=f'You have chance of having ASD.\nProbability of having ASD is {output}')
